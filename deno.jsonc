@@ -1,0 +1,14 @@
+{
+	"imports": {
+		"std/": "https://deno.land/std@0.184.0/"
+	},
+	"tasks": {
+		"dev": "deno run --watch --unstable --allow-read --allow-ffi --allow-env=DENO_SDL2_PATH main.ts",
+		"start": "deno run --unstable --allow-read --allow-ffi --allow-env=DENO_SDL2_PATH main.ts"
+	},
+	"fmt": {
+		"options": {
+			"useTabs": true
+		}
+	}
+}
