@@ -56,4 +56,10 @@ export class Memory {
 			this.memory[i + 0x200] = rom[i];
 		}
 	}
+
+	public getFontCharAddress(fontChar: number): number {
+		// Fontset is loaded into 050–09F
+		// Each char is 5 bytes long
+		return 0x050 + fontChar * 5;
+	}
 }
